@@ -31,11 +31,12 @@
     "positions"
   ],
   "dependencies": {
-    "meow": "^3.3.0",
-    "unique-random-array": "^1.0.0"
+    "meow": "^13.2.0",
+    "unique-random-array": "^4.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "6.4.1",
+    "npm-check-updates": "^18.0.1"
   },
   "bugs": {
     "url": "https://github.com/Nickdouille/kamasutra-positions/issues"

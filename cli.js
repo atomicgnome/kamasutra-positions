@@ -1,20 +1,20 @@
 #!/usr/bin/env node
-'use strict';
-var meow = require('meow');
-var kamasutraPositions = require('./');
+"use strict";
+import meow from "meow";
+import { all, random } from "./";
 
 var cli = meow({
   help: [
-    'Examples',
-    '  $ kamasutra-positions',
-    '  Classic',
-    '',
-    '  $ kamasutra-positions --all',
-    '  display all positions',
-    '',
-    'Options',
-    '  --all   Get all positions instead of a random one'
-  ]
+    "Examples",
+    "  $ kamasutra-positions",
+    "  Classic",
+    "",
+    "  $ kamasutra-positions --all",
+    "  display all positions",
+    "",
+    "Options",
+    "  --all   Get all positions instead of a random one",
+  ],
 });
 
-console.log(cli.flags.all ? kamasutraPositions.all.join('\n') : kamasutraPositions.random());
+console.log(cli.flags.all ? all.join("\n") : random());

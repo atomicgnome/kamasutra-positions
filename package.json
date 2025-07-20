@@ -1,24 +1,21 @@
 {
-  "name": "kamasutra-positions",
+  "name": "ks-positions",
   "version": "1.0.0",
   "description": "Get a random Kamasutra position",
   "license": "MIT",
-  "repository": "Nickdouille/kamasutra-positions",
+  "repository": "atomicgnome/kamasutra-positions",
   "author": {
-    "name": "Cyril Moreau",
-    "email": "cyril.moreau0804@gmail.com",
-    "url": "sojavascript.com"
+    "name": "George Gilmour"
   },
   "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "build": "npx tsc"
   },
   "files": [
-    "index.js",
-    "cli.js",
+    "./dist/",
     "kamasutra-positions.json"
   ],
   "keywords": [
